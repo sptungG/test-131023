@@ -142,7 +142,7 @@ function App() {
                   subCampaignsFields.append({
                     name: `Chiến dịch con ${subCampaignsFields.fields.length + 1}`,
                     status: true,
-                    ads: [{ name: "", quantity: 0 }],
+                    ads: [{ name: "Quảng cáo 1", quantity: 0 }],
                   });
                 }}
               >
