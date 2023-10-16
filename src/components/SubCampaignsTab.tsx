@@ -14,7 +14,7 @@ const SubCampaignsTab = ({
   ads,
   ...props
 }: TSubCampaignsTabProps) => {
-  const totalAds = ads?.reduce((prev, curr) => prev + +curr.quantity, 0);
+  const totalAds = ads?.reduce((prev, curr) => prev + +(curr?.quantity || 0), 0);
 
   return (
     <StyledTab
