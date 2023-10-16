@@ -45,7 +45,9 @@ function App() {
     mode: "onSubmit",
     resolver: yupResolver(campaignSchema),
     defaultValues: {
-      subCampaigns: [{ name: "Chiến dịch con 1", status: true, ads: [{ name: "", quantity: 0 }] }],
+      subCampaigns: [
+        { name: "Chiến dịch con 1", status: true, ads: [{ name: "Quảng cáo 1", quantity: 0 }] },
+      ],
     },
   });
 

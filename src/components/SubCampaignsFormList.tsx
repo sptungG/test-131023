@@ -115,7 +115,10 @@ const SubCampaignsFormList = ({ index, control }: TSubCampaignsFormListProps) =>
             },
           }}
           onClick={() => {
-            subCampaignAdsFields.append({ name: "", quantity: 0 }, { shouldFocus: false });
+            subCampaignAdsFields.append(
+              { name: `Quảng cáo ${subCampaignAdsFields.fields.length + 1}`, quantity: 0 },
+              { shouldFocus: false }
+            );
           }}
         >
           <AddRounded />
