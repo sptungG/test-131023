@@ -1,27 +1,69 @@
-# React + TypeScript + Vite
+**Yêu cầu**
+_Ứng viên thực hiện làm bài test dưới đây (có thể dùng Material UI, hạn chế sử dụng thư viện khác hoặc giải pháp từ bên thứ 3 nếu có thể)._
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Viết 1 ứng dụng nhỏ bằng **React**
+Viết một ứng dụng bằng **React** sử dụng **Typescript** gồm 2 tab như sau:
+- Active tab tương ứng khi người dùng chọn
 
-Currently, two official plugins are available:
+Tab thông tin:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Các trường: Tên chiến dịch, Mô tả (bắt buộc nhập trường Tên chiến dịch)
 
-## Expanding the ESLint configuration
+Tab Chiến dịch con:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Bao gồm một danh sách các chiến dịch con
 
-- Configure the top-level `parserOptions` property like this:
+- Mặc định active Chiến dịch con 1 được tạo sẵn
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+- Nút Add (+):
+
+- Để thêm mới một Chiến dịch con vào danh sách
+
+- Chiến dịch con mới mặc định chứa 1 quảng cáo
+
+- Một Chiến dịch con bao gồm:
+
+- Thông tin chiến dịch con: Tên chiến dịch con, Trạng thái hoạt động (Bắt buộc nhập trường Tên chiến dịch con)
+
+- Danh sách các quảng cáo của chiến dịch con
+
+- Một quảng cáo bao gồm:
+
+- Thông tin quảng cáo: Tên quảng cáo, Số lượng (Bắt buộc nhập cả 2 trường, trường Số lượng phải lớn hơn 0)
+
+- Nút Thêm (+):
+
+- Để thêm mới một quảng cáo vào danh sách
+
+- Danh sách quảng cáo của một chiến dịch con phải lớn hơn 0
+
+- Số lượng của chiến dịch con (số hiển thị ở dưới tên chiến dịch con trong demo) bằng tổng số lượng của tất cả các quảng cáo
+
+Validation có 2 trường hợp:
+
+Trường hợp 1: Khi chưa click nút submit
+
+Không hiển thị cảnh báo lỗi
+
+Trường hợp 2: Đã click vào nút submit
+
+Hiện cảnh báo lỗi cho tất cả các trường bắt buộc ở cả 2 Tab.
+
+Hiện cảnh báo lỗi cho tất cả các chiến dịch con (Chuyển tên chiến dịch con bị lỗi thành màu đỏ).
+
+submit
+
+- Toàn bộ thông tin trong hai tab hợp lệ (không có cảnh báo): Thành công
+
+- Ngược lại: Vui lòng điền đúng và đầy đủ thông tin và thực hiện validation với các trường bắt buộc nhập
+
+Dữ liệu chiến dịch
+
+```ts
+campaign: {
+information: { name: string; describe?: string };
+subCampaigns: [{ name: string; status: boolean; ads: [{ name: string; quantity: number }] }]
+}
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Ví dụ:
+Tham khảo ứng dụng được tạo sẵn ở menu: Demo
