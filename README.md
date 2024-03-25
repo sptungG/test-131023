@@ -72,3 +72,6 @@ campaign: {
 Ví dụ:
 
 Tham khảo ứng dụng được tạo sẵn ở menu: Demo
+
+<img width="647" alt="image" src="https://gist.github.com/assets/61298021/2011ec4d-4e3f-4714-bba0-0b650478ea76">
+<img width="647" alt="image" src="https://gist.github.com/assets/61298021/621408e7-0181-4225-892e-9a7cc69f256b">
