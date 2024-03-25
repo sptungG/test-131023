@@ -1,3 +1,12 @@
+<div align="center">
+    <table >
+     <tr>
+        <td><img width="647" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/61298021/316432533-2011ec4d-4e3f-4714-bba0-0b650478ea76.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240325%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240325T082447Z&X-Amz-Expires=300&X-Amz-Signature=0592cfeac482ef841fc565879e06098e9f3a6022ffe9872e42ded087f36d0d58&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0"></td>
+        <td><img width="647" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/61298021/316432324-621408e7-0181-4225-892e-9a7cc69f256b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240325%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240325T082522Z&X-Amz-Expires=300&X-Amz-Signature=b463d026740d38e0b457e936c1fcbb42a7b05a68e94d8c2c9e6e0fd39b51b4f9&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0"></td>
+     </tr>
+    </table>
+</div>
+
 **Yêu cầu**
 
 _Ứng viên thực hiện làm bài test dưới đây (có thể dùng Material UI, hạn chế sử dụng thư viện khác hoặc giải pháp từ bên thứ 3 nếu có thể)._
@@ -72,6 +81,3 @@ campaign: {
 Ví dụ:
 
 Tham khảo ứng dụng được tạo sẵn ở menu: Demo
-
-<img width="647" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/61298021/316432533-2011ec4d-4e3f-4714-bba0-0b650478ea76.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240325%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240325T082447Z&X-Amz-Expires=300&X-Amz-Signature=0592cfeac482ef841fc565879e06098e9f3a6022ffe9872e42ded087f36d0d58&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0">
-<img width="647" alt="image" src="https://github-production-user-asset-6210df.s3.amazonaws.com/61298021/316432324-621408e7-0181-4225-892e-9a7cc69f256b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240325%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240325T082522Z&X-Amz-Expires=300&X-Amz-Signature=b463d026740d38e0b457e936c1fcbb42a7b05a68e94d8c2c9e6e0fd39b51b4f9&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=0">
